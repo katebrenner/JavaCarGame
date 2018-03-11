@@ -1,11 +1,9 @@
 import processing.core.PApplet;
-
-import static sun.plugin2.main.client.MacOSXKeyHandler.isKeyDown;
-import java.awt.event.KeyEvent;
-
+import processing.core.PImage;
 
 public class Car {
     PApplet p;
+    PImage webImg;
     String mName = "name";
     int mStroke = 255;
     int mFill = 128;
@@ -14,26 +12,28 @@ public class Car {
     char mKey = 26;
     int mScore = 0;
 
-    Car(PApplet p, String Name, int Stroke, int Fill, int Y, int X, char Key, int Score){
+    Car(PApplet p, PImage image, String Name, int Y, int X, char Key, int Score){
        this.p = p;
+       this.webImg = image;
        mName = Name;
-       mStroke = Stroke;
-       mFill = Fill;
        mY = Y;
        mX = X;
        mKey = Key;
        mScore = Score;
    }
 
-   public void render(){
-       p.stroke(mStroke);
-       p.fill(mFill);
-       p.rect(mX, mY,100,100);
+   void setup() {
 
    }
 
+   public void render(){
+       p.stroke(mStroke);
+       p.fill(mFill);
+       p.image(webImg, mX, mY);
+   }
+
     public void keyPressed() {
-        mX = mX + 50;
+        mX = mX + 10;
         if (mX == 1000) {
             System.out.println("winner is" + mName);
             mScore = mScore + 1;
@@ -46,6 +46,12 @@ public class Car {
     public int getmX() {
         return mX;
     }
+//    public void setWidth(int x) {
+//        mWidth = x;
+//    }
+//    public int getmWidth() {
+//        return mWidth;
+//    }
 
 //    public void setmScore() {
 //        mScore = mScore + 1;
