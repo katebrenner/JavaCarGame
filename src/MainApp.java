@@ -9,8 +9,8 @@ public class MainApp extends PApplet {
     private Car car1;
     private Car car2;
     private Game game;
-    float Num;
-    float Num2;
+    private Snow snow;
+//    private int[] nums;
     PImage webImg1;
     PImage webImg2;
     PFont font;
@@ -26,7 +26,7 @@ public class MainApp extends PApplet {
     public void setup() {
         String[] fontList = PFont.list();
         printArray(fontList);
-        font = createFont("Lucida Sans Typewriter Bold", 32);
+        font = createFont("Futura", 32);
         textFont(font);
         String url1 = "http://www.clker.com/cliparts/r/Z/D/N/E/w/red-car-top-view-hi.png";
         String url2 = "http://www.clker.com/cliparts/f/r/5/5/H/c/red-car-top-view-hi.png";
@@ -37,11 +37,13 @@ public class MainApp extends PApplet {
         car1 = new Car(this, webImg1, "Car1", 250, 100, 'a', 0 );
         car2 = new Car(this, webImg2, "Car2",450, 100, 'w', 0 );
         game = new Game(this, "go");
+        snow = new Snow(this);
         game.render();
-        Num = random(0, width);
-        Num2 = random(0, height);
-        println(width);
-        println(game.getmState());
+//        println(width);
+//        println(game.getmState());
+//        nums = new int[100];
+//        nums[4] = 100;
+//        print(nums);
     }
 
     //this happens over and over again
@@ -66,10 +68,7 @@ public class MainApp extends PApplet {
             text(car1.getScore(), 900, 120);
             text("Player 2: ", 700, 180);
             text(car2.getScore(), 900, 180);
-            fill(255, 150);
-
-            ellipse(Num, Num2, 10, 10);
-
+            snow.display();
         }
 
     }
