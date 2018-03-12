@@ -1,12 +1,13 @@
 import processing.core.PApplet;
 
+import static javax.swing.JOptionPane.ERROR_MESSAGE;
+import static javax.swing.JOptionPane.showMessageDialog;
+
 public class Game {
     PApplet p;
-    String mState;
     int roadX = 50;
-    Game(PApplet p, String State){
+    Game(PApplet p){
         this.p = p;
-        mState = State;
     }
     public void render() {
         //rendering
@@ -29,19 +30,8 @@ public class Game {
         //logic
         roadX = roadX - 1;
     }
-    public String getmState() {
-        return mState;
-    }
-
     public void wrongInput() {
-        p.text(" Please use A for player one and L for player 2", 700, 120);
+        showMessageDialog(null, "Please use A for player 1 and L for player 2",
+                "Alert", ERROR_MESSAGE);
     }
-//    public void setmState() {
-//        if( mState == "wait") {
-//            mState = "go";
-//        }
-//        else if (mState == "go") {
-//            mState = "wait";
-//        }
-//    }
 }
