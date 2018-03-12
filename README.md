@@ -29,4 +29,4 @@ The goal of this prject was to wisely use Object Oriented Programming and Java C
 * time constraints- would have liked to impliment more features with more time
 
 
-![Alt Text](https://media.giphy.com/media/g0TgZmrQQJSLJ7l9dD/giphy.gif)
+![Alt Text](https://media.giphy.com/media/fHujAsHXsHof1EcjvN/giphy.gif)
