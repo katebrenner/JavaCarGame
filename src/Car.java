@@ -1,5 +1,8 @@
 import processing.core.PApplet;
 import processing.core.PImage;
+import java.util.ArrayList;
+
+import static processing.core.PApplet.parseInt;
 
 public class Car {
     PApplet p;
@@ -10,20 +13,15 @@ public class Car {
     int mY = 100;
     int mX = 100;
     char mKey = 26;
-    int mScore = 0;
+    private ArrayList<Integer> mScore = new ArrayList<>();
 
-    Car(PApplet p, PImage image, String Name, int Y, int X, char Key, int Score){
+    Car(PApplet p, PImage image, String Name, int Y, int X, char Key){
        this.p = p;
        this.webImg = image;
        mName = Name;
        mY = Y;
        mX = X;
        mKey = Key;
-       mScore = Score;
-   }
-
-   void setup() {
-
    }
 
    public void render(){
@@ -36,29 +34,23 @@ public class Car {
         mX = mX + 10;
         if (mX == 1000) {
             System.out.println("winner is" + mName);
-            mScore = mScore + 1;
+            mScore.add(1);
         }
     }
-
     public int getScore() {
-        return mScore;
+        int sum = 0;
+        if( mScore.size() > 0 ) {
+            for (int i = 0; i < mScore.size(); i++) {
+                sum = sum + parseInt(mScore.get(i));
+            }
+        }
+        return sum;
     }
     public int getmX() {
         return mX;
     }
-//    public void setWidth(int x) {
-//        mWidth = x;
-//    }
-//    public int getmWidth() {
-//        return mWidth;
-//    }
-
-//    public void setmScore() {
-//        mScore = mScore + 1;
-//    }
-
     public void setmX() {
-    mX = 100;
+        mX = 100;
     }
 }
 

@@ -33,8 +33,8 @@ public class MainApp extends PApplet {
         webImg2 = loadImage(url2, "png");
         webImg1.resize(100, 50);
         webImg2.resize(100,50);
-        car1 = new Car(this, webImg1, "Car1", 250, 100, 'a', 0 );
-        car2 = new Car(this, webImg2, "Car2",450, 100, 'w', 0 );
+        car1 = new Car(this, webImg1, "Car1", 250, 100, 'a');
+        car2 = new Car(this, webImg2, "Car2",450, 100, 'w');
         game = new Game(this);
         snow = new Snow[1000];
         for (int i = 0; i < 1000; i ++) {
@@ -44,8 +44,14 @@ public class MainApp extends PApplet {
         splash = new Start(this);
     }
     public void draw() {
+
         if(start == false) {
             splash.display();
+            for (int i = 0; i < 1000; i ++) {
+                snow[i].display();
+                snow[i].descend();
+                snow[i].restart();
+            }
         }
         else {
             noStroke();
