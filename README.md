@@ -20,5 +20,8 @@ The goal of this prject was to wisely use Object Oriented Programming and Java C
 
 
 ## Wins:
+* Had never written a Line of Java until Monday & created fully functioning game
+
 
 ## Challenges:
+* time constraints- would have liked to impliment more features with more time
