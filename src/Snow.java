@@ -5,19 +5,16 @@ public class Snow {
     float Num;
     float Num2;
     float d;
-
     Snow(PApplet p, float diameter) {
         this.p = p;
         Num = p.random(0, p.width);
         Num2 = p.random(-20, 900);
         d = diameter;
     }
-
     public void descend() {
         Num2 = Num2 + 2;
         Num = Num + p.random(-1,1);
     }
-
     public void display() {
         p.fill(255,140);
         p.noStroke();

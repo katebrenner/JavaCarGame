@@ -15,12 +15,9 @@ public class MainApp extends PApplet {
     PImage webImg1;
     PImage webImg2;
     PFont font;
-
     public static void main(String[] args){
         PApplet.main("MainApp", args);
     }
-
-    //defines size of screen
     public void settings(){
         size(1024, 800);
     }
@@ -44,7 +41,6 @@ public class MainApp extends PApplet {
         splash = new Start(this);
     }
     public void draw() {
-
         if(start == false) {
             splash.display();
             for (int i = 0; i < 1000; i ++) {
@@ -102,14 +98,3 @@ public class MainApp extends PApplet {
 }
 
 
-//need to make a car class that gets 2 instances - done
-// if keydown a is pressed, move car a, if keydown L is pressed, move car b - done
-// the keydown will move the y-coordinate of the car - done
-//  if y coordinate of one of the cars reaches the width of the screen, there is a winner - done
-// get fonts to work -done
-// gain user input for the cars racing, so that their name can be displayed for the cars
-// switch out the cars so that they are not squares - done
-// when there is a winner, name appears and adjust winner count
-//m ake the a state for play state and not play state
-// when in not play state  then noloop, when in play state, can loop
-//can redefine variables in if statement

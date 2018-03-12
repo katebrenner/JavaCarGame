@@ -29,7 +29,6 @@ public class Car {
        p.fill(mFill);
        p.image(webImg, mX, mY);
    }
-
     public void keyPressed() {
         mX = mX + 10;
         if (mX == 1000) {
@@ -40,8 +39,8 @@ public class Car {
     public int getScore() {
         int sum = 0;
         if( mScore.size() > 0 ) {
-            for (int i = 0; i < mScore.size(); i++) {
-                sum = sum + parseInt(mScore.get(i));
+            for (int i : mScore) {
+                sum = sum + i;
             }
         }
         return sum;
