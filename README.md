@@ -15,8 +15,10 @@ The goal of this prject was to wisely use Object Oriented Programming and Java C
 
 
 ## What's next:
-* Gaining user input to store as Player 1 and Player 2
-* Displying Winner's name upon win condition
+* Gaining & Storing user information to display user’s name on screen instead of “Player 1”
+* Adding Obstacles as the cars are Racing
+* Option to play against computer
+
 
 
 ## Wins:
@@ -25,3 +27,6 @@ The goal of this prject was to wisely use Object Oriented Programming and Java C
 
 ## Challenges:
 * time constraints- would have liked to impliment more features with more time
+
+
+![Alt Text](https://media.giphy.com/media/g0TgZmrQQJSLJ7l9dD/giphy.gif)
