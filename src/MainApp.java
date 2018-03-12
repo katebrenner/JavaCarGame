@@ -55,7 +55,7 @@ public class MainApp extends PApplet {
             car1.render();
             car2.render();
             fill(0);
-            String L = "Leader Board:";
+            String L = "Leaderboard:";
             float tw;
             tw = textWidth(L);
             text(L, 700, 60);
@@ -87,14 +87,11 @@ public class MainApp extends PApplet {
             car1.setmX();
             car2.setmX();
         }
-
     }
     public void mouseClicked() {
-        if(mouseX > 300  && mouseX < 500 && mouseY > 110 && mouseY < 130) {
+        if(mouseX > 350  && mouseX < 450 && mouseY > 550 && mouseY < 650) {
             start = true;
         }
 
     }
 }
-
-
