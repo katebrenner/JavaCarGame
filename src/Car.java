@@ -2,8 +2,6 @@ import processing.core.PApplet;
 import processing.core.PImage;
 import java.util.ArrayList;
 
-import static processing.core.PApplet.parseInt;
-
 public class Car {
     PApplet p;
     PImage webImg;

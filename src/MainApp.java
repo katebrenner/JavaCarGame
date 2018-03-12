@@ -1,9 +1,6 @@
 import processing.core.PApplet;
 import processing.core.PFont;
-import processing.core.PGraphics;
 import processing.core.PImage;
-
-import static javax.swing.JOptionPane.*;
 
 public class MainApp extends PApplet {
     private Car car1;
@@ -89,7 +86,7 @@ public class MainApp extends PApplet {
         }
     }
     public void mouseClicked() {
-        if(mouseX > 350  && mouseX < 450 && mouseY > 550 && mouseY < 650) {
+        if(mouseX > 350  && mouseX < 550 && mouseY > 500 && mouseY < 650) {
             start = true;
         }
 

@@ -1,16 +1,16 @@
 # SECAproject1 - Racing in the Blizzard
 
-This project utlizes Java and Processing for a 2 player car racing game.
+This project utilizes Java and Processing for a 2 player car racing game.
 
-The goal of this prject was to wisely use Object Oriented Programming and Java Classes to create a game.  Another goal was to comprehend and utilize the asthetic capabilites of processing.
+The goal of this project was to wisely use Object Oriented Programming and Java Classes to create a game.  Another goal was to comprehend and utilize the asthetic capabilites of processing.
 
 ## The approach was to create a basic MVP project which included the blow and all of which were accomplished:
 * 2 cars, each which was activated on a separate click event
 * Leader board storing a win count
-* Game reseting (yet storing win data) upon a user winning
+* Game resetting (yet storing win data) upon a user winning
 
 ## Post MVP items that were accomplished:
-* utlitzing images for cars insted of the processing "rect" function
+* utilizing images for cars instead of the processing "rect" function
 * adding in a visual layer- decided on snow
 
 
@@ -26,7 +26,7 @@ The goal of this prject was to wisely use Object Oriented Programming and Java C
 
 
 ## Challenges:
-* time constraints- would have liked to impliment more features with more time
+* time constraints- would have liked to implement more features with more time
 
 
 ![Alt Text](https://media.giphy.com/media/fHujAsHXsHof1EcjvN/giphy.gif)
