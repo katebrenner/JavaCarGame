@@ -29,4 +29,5 @@ The goal of this project was to wisely use Object Oriented Programming and Java 
 * time constraints- would have liked to implement more features with more time
 
 
-![Game GIF](https://media.giphy.com/media/fHujAsHXsHof1EcjvN/giphy.gif)
+
+![Alt Text](https://media.giphy.com/media/fHujAsHXsHof1EcjvN/giphy.gif)
