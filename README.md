@@ -6,4 +6,4 @@ The goal of this project was to wisely use Object Oriented Programming and Java 
 
 
 
-![Racing Game](https://media.giphy.com/media/fHujAsHXsHof1EcjvN/giphy.gif)
+![Racing Game](https://giphy.com/gifs/fHujAsHXsHof1EcjvN/html5)
