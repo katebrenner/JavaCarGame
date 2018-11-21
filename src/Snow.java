@@ -2,31 +2,28 @@ import processing.core.PApplet;
 
 public class Snow {
     PApplet p;
-    float Num;
-    float Num2;
+    float x;
+    float y;
     float d;
     Snow(PApplet p, float diameter) {
         this.p = p;
-        Num = p.random(0, p.width);
-        Num2 = p.random(-20, 900);
+        x = p.random(0, p.width);
+        y = p.random(-20, 900);
         d = diameter;
     }
     public void descend() {
-        Num2 = Num2 + 2;
-        Num = Num + p.random(-1,1);
+        y = y + 2;
+        x = x + p.random(-1,1);
+        if (y > 900) {
+            y = 0;
+        }
     }
     public void display() {
         p.fill(255,140);
         p.noStroke();
-        p.ellipse(Num, Num2, d, d);
-    }
-    public void restart() {
-        if (Num2 > 900) {
-            Num2 = 0;
-        }
+        p.ellipse(x, y, d, d);
     }
     public float getNum2() {
-        return Num2;
-
+        return y;
     }
 }

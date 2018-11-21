@@ -21,8 +21,8 @@ public class MainApp extends PApplet {
     public void setup() {
         font = createFont("Futura", 32);
         textFont(font);
-        String url1 = "http://www.clker.com/cliparts/r/Z/D/N/E/w/red-car-top-view-hi.png";
-        String url2 = "http://www.clker.com/cliparts/f/r/5/5/H/c/red-car-top-view-hi.png";
+        String url1 = "./assets/yellow-car.png";
+        String url2 = "./assets/blue-car.png";
         webImg1 = loadImage(url1, "png");
         webImg2 = loadImage(url2, "png");
         webImg1.resize(100, 50);
@@ -43,7 +43,6 @@ public class MainApp extends PApplet {
             for (int i = 0; i < 1000; i ++) {
                 snow[i].display();
                 snow[i].descend();
-                snow[i].restart();
             }
         }
         else {
@@ -64,7 +63,6 @@ public class MainApp extends PApplet {
             for (int i = 0; i < 1000; i ++) {
                 snow[i].display();
                 snow[i].descend();
-                snow[i].restart();
             }
         }
     }
